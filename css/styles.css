@@ -11402,10 +11402,11 @@ header.masthead {
   background-size: cover;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;/*2.25rem*/
   text-shadow: 0 0 2px rgba(0,0,0,0.7); /* my code*/
-
-
+}
+header.p {
+  font-size: 1rem;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -11415,7 +11416,7 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 0;
   }
   header.masthead p {
-    font-size: 1.2rem; /*1.15rem;*/
+    font-size: 1.5rem; /*1.15rem;*/
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 2rem; /*3rem*/
