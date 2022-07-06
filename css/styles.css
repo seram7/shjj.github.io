@@ -11419,6 +11419,7 @@ header.p {
   }
   header.masthead p {
     font-size: 1.5rem; /*1.15rem;*/
+    text-shadow: 0 0 2.5px rgba(0,0,0,0.6);
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 2rem; /*3rem*/
@@ -11427,6 +11428,10 @@ header.p {
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
+  }
+  header.masthead p { /*없었음*/
+    font-size: 2rem; 
+    text-shadow: 0 0 2.5px rgba(0,0,0,0.6);
   }
 }
 
