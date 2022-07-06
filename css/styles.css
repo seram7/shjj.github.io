@@ -11454,7 +11454,7 @@ header.p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(--bs-white-rgb, 0.9);
+  background: rgba(--bs-white-rgb, 0.5);
   transition: opacity 0.25s ease;
   text-align: center;
 }
