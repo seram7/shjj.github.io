@@ -243,7 +243,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #c34e2e;
+  color: var(--bs-success);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -604,7 +604,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto; /* auto */
+  height: 25rem; /* auto */
   object-fit: cover; /*my code*/
 }
 
@@ -3042,17 +3042,17 @@ textarea.form-control-lg {
 .btn-primary:hover {
   color: #fff;
   background-color: #cf5331;
-  border-color: #c34e2e;
+  border-color: var(--bs-success);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
   background-color: #cf5331;
-  border-color: #c34e2e;
+  border-color: var(--bs-success);
   box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #c34e2e;
+  background-color: var(--bs-success);
   border-color: #b74a2c;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
@@ -3480,7 +3480,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #c34e2e;
+  color: var(--bs-success);
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3958,7 +3958,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #c34e2e;
+  color: var(--bs-success);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4822,13 +4822,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #c34e2e;
+  color: var(--bs-success);
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #c34e2e;
+  color: var(--bs-success);
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
@@ -6442,7 +6442,7 @@ textarea.form-control-lg {
   color: var(--bs-primary);
 }
 .link-primary:hover, .link-primary:focus {
-  color: #c34e2e;
+  color: var(--bs-success);
 }
 
 .link-secondary {
