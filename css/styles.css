@@ -605,7 +605,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  min-width: 33rem;
+  min-width: 33.3333333333%;
   height: auto;
   /* height: 33rem; auto */
   object-fit: cover; /*my code*/
