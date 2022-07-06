@@ -606,7 +606,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   min-width: 33.3333333333%;
-  max-height: 33.333333333%;
+  height: auto;
   /* height: 33rem; auto */
   object-fit: cover; /*my code*/
 }
@@ -11457,7 +11457,7 @@ header.p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(--bs-black-rgb, 0.9);
+  background: rgba(244,98,58, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
