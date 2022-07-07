@@ -11440,10 +11440,10 @@ header.p {
 
 #gallery .container-fluid, #gallery .container-sm, #gallery .container-md, #gallery .container-lg, #gallery .container-xl, #gallery .container-xxl {
   max-width: 1920px;
+  padding-bottom: 100%
 }
 #gallery .container-fluid .gallery-box, #gallery .container-sm .gallery-box, #gallery .container-md .gallery-box, #gallery .container-lg .gallery-box, #gallery .container-xl .gallery-box, #gallery .container-xxl .gallery-box {
   position: relative;
-  padding-bottom: 100%
   display: block; /*block*/
 }
 #gallery .container-fluid .gallery-box .gallery-box-caption, #gallery .container-sm .gallery-box .gallery-box-caption, #gallery .container-md .gallery-box .gallery-box-caption, #gallery .container-lg .gallery-box .gallery-box-caption, #gallery .container-xl .gallery-box .gallery-box-caption, #gallery .container-xxl .gallery-box .gallery-box-caption {
