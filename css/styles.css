@@ -605,9 +605,7 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  /* min-width: 33.3333333333%; */
-  /* height: auto; */
-  /* height: 33rem; auto */
+  height: auto;
   object-fit: cover; /*my code*/
 }
 
@@ -11443,9 +11441,9 @@ header.p {
 }
 #gallery .container-fluid .gallery-box, #gallery .container-sm .gallery-box, #gallery .container-md .gallery-box, #gallery .container-lg .gallery-box, #gallery .container-xl .gallery-box, #gallery .container-xxl .gallery-box {
   position: relative;
-  display: block; /*block*/
+  display: block;
   width: 100%;
-  padding-bottom: 100%;
+  overflow: hidden;
 }
 #gallery .container-fluid .gallery-box .gallery-box-caption, #gallery .container-sm .gallery-box .gallery-box-caption, #gallery .container-md .gallery-box .gallery-box-caption, #gallery .container-lg .gallery-box .gallery-box-caption, #gallery .container-xl .gallery-box .gallery-box-caption, #gallery .container-xxl .gallery-box .gallery-box-caption {
   display: flex;
@@ -11475,3 +11473,5 @@ header.p {
 #gallery .container-fluid .gallery-box:hover .gallery-box-caption, #gallery .container-sm .gallery-box:hover .gallery-box-caption, #gallery .container-md .gallery-box:hover .gallery-box-caption, #gallery .container-lg .gallery-box:hover .gallery-box-caption, #gallery .container-xl .gallery-box:hover .gallery-box-caption, #gallery .container-xxl .gallery-box:hover .gallery-box-caption {
   opacity: 1;
 }
+.makerect {align-itmes:center;position: center; width:100%; padding-bottom:100%; overflow:hidden; object-fit: cover;}
+.makerect >img{position:absolute;}
