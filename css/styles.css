@@ -11465,7 +11465,7 @@ header.p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(var(--bs-success-rgb), 0.5);
+  background: rgba(var(--bs-primary-rgb), 0.5);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11496,5 +11496,5 @@ header.p {
 }
 
 .map-icon {
-  width: 5em;
+  width: 4em;
   height: auto;
