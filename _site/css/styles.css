@@ -11492,5 +11492,9 @@ header.p {
   font-family: 'Cedarville Cursive', cursive;/*웹 폰트 지정*/
 }
 .gown-font{
-  font-family: 'Gowun Batang', serif ;
+  font-family: 'Gowun Batang', serif;
 }
+
+.map-icon {
+  width: 6rem;
+  height: auto;
