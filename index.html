@@ -393,29 +393,32 @@
                     
                     <div class="container-fluid p-0">
                         <div class = "row g-0">
-                        <div id="map" style="width:80%;height:40px;">
-                            <script>
-                            var position = new naver.maps.LatLng(37.4723467, 126.9422745);
+                            <div class="col-6 text-center">
 
-                            var map = new naver.maps.Map('map', {
-                                center: position,
-                                zoom: 17
-                            });
+                                <div id="map" style="width:80%;height:40px;">
+                                    <script>
+                                    var position = new naver.maps.LatLng(37.4723467, 126.9422745);
 
-                            var markerOptions = {
-                                position: position.destinationPoint(0, 20),
-                                map: map,
-                                icon: {
-                                url: 'https://navermaps.github.io/maps.js.ncp/docs/img/example/sally.png',
-                                size: new naver.maps.Size(50, 52),
-                                origin: new naver.maps.Point(0, 0),
-                                anchor: new naver.maps.Point(25, 26)
-                                }
-                            };
+                                    var map = new naver.maps.Map('map', {
+                                        center: position,
+                                        zoom: 17
+                                    });
 
-                              var marker = new naver.maps.Marker(markerOptions);
-                            </script>
-                        </div>
+                                    var markerOptions = {
+                                        position: position.destinationPoint(0, 20),
+                                        map: map,
+                                        icon: {
+                                        url: 'https://navermaps.github.io/maps.js.ncp/docs/img/example/sally.png',
+                                        size: new naver.maps.Size(50, 52),
+                                        origin: new naver.maps.Point(0, 0),
+                                        anchor: new naver.maps.Point(25, 26)
+                                        }
+                                    };
+
+                                    var marker = new naver.maps.Marker(markerOptions);
+                                    </script>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
