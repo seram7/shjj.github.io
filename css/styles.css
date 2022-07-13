@@ -152,7 +152,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 0.5rem; /*1.25*/
+  font-size: 0.9rem; /*1.25*/
 }
 
 h6, .h6 {
@@ -11494,7 +11494,19 @@ header.p {
 /*my code*/
 .makerect {position: relative; width:100%; padding-bottom:100%; overflow:hidden;}
 .makerect >img{position:absolute;}
-
+.img-fluid-circle {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /*my code*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  border-radius:100%;
+  border: 2px solid #fff;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Gowun+Batang&display=swap');
 .cc-font{
