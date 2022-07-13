@@ -411,6 +411,7 @@
                                     anchor: new naver.maps.Point(25, 26)
                                     }
                                 };
+                                var marker = new naver.maps.Marker(markerOptions);
 
                                 var position2 = new naver.maps.LatLng(37.4744779, 126.9402114);
                                 var markerOptions2 = {
@@ -424,8 +425,21 @@
                                     }
                                 };
                                 var marker2 = new naver.maps.Marker(markerOptions2);
+                                
+                                var btns = $(".buttons > input");
+                                btns.on("click", function(e) {
+                                    e.preventDefault();
 
-                                var marker = new naver.maps.Marker(markerOptions);
+                                    var mapTypeId = this.id;
+
+                                    if (map.getMapTypeId() !== naver.maps.MapTypeId[mapTypeId]) {
+                                        map.setMapTypeId(naver.maps.MapTypeId[mapTypeId]); // 지도 유형 변경하기
+
+                                        btns.removeClass("control-on");
+                                        $(this).addClass("control-on");
+                                    }
+                                });
+
                                 </script>
                             </div>
                         <!-- </div>
