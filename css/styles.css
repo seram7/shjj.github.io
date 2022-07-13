@@ -152,7 +152,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 0.9rem; /*1.25*/
+  font-size: 1.1rem; /*1.25*/
 }
 
 h6, .h6 {
@@ -7342,6 +7342,10 @@ textarea.form-control-lg {
   margin-top: 3rem !important;
 }
 
+.mt-10 {
+  margin-top: 6rem !important;
+}
+
 .mt-auto {
   margin-top: auto !important;
 }
@@ -11519,3 +11523,6 @@ header.p {
 .map-icon {
   width: 4em;
   height: auto;
+  margin-left:1em;
+  margin-right:1em;
+}
