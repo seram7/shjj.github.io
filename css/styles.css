@@ -11521,9 +11521,15 @@ header.p {
   font-family: 'Gowun Batang', serif;
 }
 
+.map {
+  width: 100%;
+  height: 100%;
+  }
+
 .map-icon {
   width: 4em;
   height: auto;
   margin-left:1em;
   margin-right:1em;
 }
+
