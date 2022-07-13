@@ -351,7 +351,7 @@
                 <div class="text-center">
                     <h1 class="cc-font text-black mt-0 mb-5">Map</h1>
                     <!-- <h2 class="fw-bold" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2> -->
-                    <h2 class="fw-bold mt-1" style="font-family: 'Noto Serif KR', serif;">본식</h2>
+                    <h2 class="fw-bold mt-1" style="font-family: 'Noto Serif KR', serif;">결혼식장</h2>
                     <div>
                         <h3 class = "mt-5" style="font-family: 'Noto Serif KR', serif;">대학촌교회</h3>
                         <h4 style="font-family: 'Noto Serif KR', serif;">(서울시 관악구 서림7길 71)</h4>
@@ -389,52 +389,56 @@
                                 <script>
         
                                 var mapDiv = document.getElementById('map');
-                                var position = new naver.maps.LatLng(37.4722547, 126.9422002);
+                                var ctrposition = new naver.maps.LatLng(37.4736260, 126.9410479); // 자도 가운데
         
                                 var map = new naver.maps.Map('map', {
-                                    center: position,
+                                    center: ctrposition,
                                     zoom: 15
                                 });
-        
+
+                                var position = new naver.maps.LatLng(37.4722679, 126.9421702); // 대학촌교회
                                 var markerOptions = {
-                                    position: position.destinationPoint(0, 20),
+                                    position: position.destinationPoint(0, 10),
                                     map: map,
                                     icon: {
-                                    url: 'https://navermaps.github.io/maps.js.ncp/docs/img/example/sally.png',
-                                    size: new naver.maps.Size(50, 52),
+                                    url: './assets/heart+title.png',
+                                    size: new naver.maps.Size(40,40),
+                                    scaledSize: new naver.maps.Size(40,40),
                                     origin: new naver.maps.Point(0, 0),
-                                    anchor: new naver.maps.Point(25, 26)
+                                    anchor: new naver.maps.Point(20,20)
                                     }
                                 };
                                 var marker = new naver.maps.Marker(markerOptions);
 
-                                var position2 = new naver.maps.LatLng(37.4744779, 126.9402114);
+                                var position2 = new naver.maps.LatLng(37.4746669, 126.9402961); // 제일성도교회
                                 var markerOptions2 = {
                                     position: position2.destinationPoint(0, 0),
                                     map: map,
                                     icon: {
-                                    url: 'https://navermaps.github.io/maps.js.ncp/docs/img/example/sally.png',
-                                    size: new naver.maps.Size(25,26),
-                                    scaledSize: new naver.maps.Size(25,26),
+                                    url: './assets/shuttle.png',
+                                    size: new naver.maps.Size(40,40),
+                                    scaledSize: new naver.maps.Size(40,40),
                                     origin: new naver.maps.Point(0, 0),
-                                    anchor: new naver.maps.Point(25, 26)
+                                    anchor: new naver.maps.Point(40,40)
                                     }
                                 };
                                 var marker2 = new naver.maps.Marker(markerOptions2);
 
-                                var btns = $(".buttons > input");
-                                btns.on("click", function(e) {
-                                    e.preventDefault();
-
-                                    var mapTypeId = this.id;
-
-                                    if (map.getMapTypeId() !== naver.maps.MapTypeId[mapTypeId]) {
-                                        map.setMapTypeId(naver.maps.MapTypeId[mapTypeId]); // 지도 유형 변경하기
-
-                                        btns.removeClass("control-on");
-                                        $(this).addClass("control-on");
+                                var position3 = new naver.maps.LatLng(37.4746087, 126.9404089); // 제일성도교회
+                                var markerOptions3 = {
+                                    position: position3.destinationPoint(0, 0),
+                                    map: map,
+                                    icon: {
+                                    url: './assets/parking.png',
+                                    size: new naver.maps.Size(40,40),
+                                    scaledSize: new naver.maps.Size(40,40),
+                                    origin: new naver.maps.Point(0, 0),
+                                    anchor: new naver.maps.Point(40,40)
                                     }
-                                });
+                                };
+                                var marker2 = new naver.maps.Marker(markerOptions3);
+
+                
 
                                 </script>
                             </div>
@@ -447,7 +451,7 @@
                     <h2 calss="fw-bold mt-1" style="font-family: 'Noto Serif KR', serif;"><br>오시는 길</h2>
 
                     <div>
-                        <h3 class = "mt-5" style="font-family: 'Noto Serif KR', serif;"> &#128652 셔틀 버스</h3>
+                        <h3 class = "mt-5" style="font-family: 'Noto Serif KR', serif;"> &#128652 셔틀버스</h3>
                         <h4 class = "mt-3" style="font-family: 'Noto Serif KR', serif;"> <br>
                             <span class="tab"></span>(1) 서울대벤처타운역 - 서울산업정보학교 버스정류장(신림역 방향) - 대학촌교회(결혼식장) - 서울대벤처타운역<br>
                             <span class="tab"></span><span class="tab"></span>10:30 ~ 13:30, 배차간격 약 10분<br>
@@ -486,7 +490,7 @@
                         <h3 class = "mt-5" style="font-family: 'Noto Serif KR', serif;"> &#128664 자가용</h3>
                         <h4 class = "mt-3" style="font-family: 'Noto Serif KR', serif;"><br> 
                             <span class="tab"></span>주차 후 셔틀버스 또는 도보 15분<br> 
-                            <span class="tab"></span>주차장: 제일성도교회(서울시 관악구 복은길 76) <br> 
+                            <span class="tab"></span>주차장: 제일성도교회(서울시 관악구 복은길 76) 제 3주차장 <br> 
                         </h4>
                         <h4 class = "mt-1"style="font-family: 'Noto Serif KR', serif;">
                             <span class="tab"></span> &#128205 주차장이 협소한 관계로 가급적 대중교통을 이용하여 주시고, 주차가 필요하신 분께서는 개별 연락을 부탁드립니다.<br></h4>
