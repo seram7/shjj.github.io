@@ -30,7 +30,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#intro">Bride&Groom</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#intro">Groom&Bride</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Save the Date</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li> <!--gallery, gallery-->
@@ -419,6 +419,9 @@
                         <!-- <div id="map"> -->
                     </div>
                 </div>    
+                <h4 class="text-center">
+                    <span class="ms-2"></span> &#128205 지도를 확대해 위치를 확인하세요!
+                </h4>
                 <!-- <div class="container-fluid p-0"> -->
                     <!--<div class = "row g-0">
                         <div class="col-6 text-center"> -->
@@ -427,7 +430,7 @@
                                 <script>
         
                                 var mapDiv = document.getElementById('map');
-                                var ctrposition = new naver.maps.LatLng(37.4727805, 126.9405138); // 자도 가운데
+                                var ctrposition = new naver.maps.LatLng(37.4727805, 126.9405138); // 지도 가운데
         
                                 var map = new naver.maps.Map('map', {
                                     center: ctrposition,
@@ -490,7 +493,7 @@
                                 };
                                 var marker4 = new naver.maps.Marker(markerOptions4);
 
-                                var position5 = new naver.maps.LatLng(37.4709458, 126.9408276); // 삼성고 셔틀
+                                var position5 = new naver.maps.LatLng(37.4709458, 126.9412762); // 삼성고 셔틀
                                 var markerOptions5= {
                                     position: position5.destinationPoint(0, 0),
                                     map: map,
@@ -504,7 +507,7 @@
                                 };
                                 var marker5 = new naver.maps.Marker(markerOptions5);
 
-                                var position6 = new naver.maps.LatLng(37.4709740, 126.9412762); // 삼성고 버스정류장
+                                var position6 = new naver.maps.LatLng(37.4709740, 126.9412900); // 삼성고 버스정류장
                                 var markerOptions6= {
                                     position: position6.destinationPoint(0, 0),
                                     map: map,
@@ -532,14 +535,16 @@
                     <h2 calss="fw-bold mt-1" style="font-family: 'Noto Serif KR', serif;"><br><b>오시는 길</b></h2>
 
                     <div>
-                        <h3 class = "mt-5 fw-bold" style="font-family: 'Noto Serif KR', serif;"> &#128652 셔틀버스</h3>
+                        <h3 class = "mt-5 fw-bold" style="font-family: 'Noto Serif KR', serif;"> &#128652 셔틀버스 노선 (10:30~13:30 사이 총 2대 운행)</h3>
                         <h4 class = "mt-3" style="font-family: 'Noto Serif KR', serif;"> <br>
-                            <span class="ms-2"></span>(1) 서울대벤처타운역 2번 출구 - 서울산업정보학교.삼성교 버스정류장(원공인중개사 앞) - 대학촌교회(결혼식장) - 서울대벤처타운역 2번 출구<br>
-                            <span class="ms-4"></span>10:30 ~ 13:30, 배차간격 약 10분<br>
-                            <span class="ms-2"></span>(2) 제일성도교회(주차장) - 대학촌교회(결혼식장)<br>
-                            <span class="ms-4"></span>10:30 ~ 13:30, 배차간격 약 5분 <br>
+                            <span class="ms-2"></span>셔틀버스 &#9312; (배차간격 약 10분) <br>
+                            <span class="ms-4"></span>서울대벤처타운역 2번 출구 - 서울산업정보학교.삼성교 버스정류장(원공인중개사 앞) - 대학촌교회(결혼식장) - 서울대벤처타운역 2번 출구<br><br>
+                            <!-- <span class="ms-4"></span>10:30 ~ 13:30, 배차간격 약 10분<br> -->
+                            <span class="ms-2"></span>셔틀버스 &#9313; (배차간격 약 5분) <br>
+                            제일성도교회(주차장) - 대학촌교회(결혼식장)<br>
+                            <!-- <span class="ms-4"></span>10:30 ~ 13:30, 배차간격 약 5분 <br> -->
                             <br>
-                            <span class="ms-2"></span> &#128205 지도를 확대해 위치를 확인하세요!
+                            <!-- <span class="ms-2"></span> &#128205 지도를 확대해 위치를 확인하세요! -->
                         </h4>
                     </div>
 
